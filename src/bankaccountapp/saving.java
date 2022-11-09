@@ -2,8 +2,8 @@ package bankaccountapp;
 
 public class saving extends account{
 	//create a constructor
-	int safetyID;
-	int safetyKey;
+	private int safetyID;
+	private int safetyKey;
 	int debitCardNumber;
 	int debitPIN;
 	

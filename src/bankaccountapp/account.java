@@ -1,18 +1,18 @@
 package bankaccountapp;
 
 public abstract class account implements IRate{
-	String name;
-	String sSN;
-	double balance;
-	String accountNumber;
-	double rate;
+	private String name;
+	private String sSN;
+	private double balance;
+	protected String accountNumber;
+	protected double rate;
 	static int index = 1000;
 	
 	//list of properties for the checking account
 	public account(String name, String sSN, double initDeposit) {
 		this.name = name;
 		this.sSN = sSN;
-		balance = initDeposit;
+		this.balance = initDeposit;
 //		System.out.println("NAME: " + name + " SSN: " + sSN + " BALANCE: $" + balance);
 		
 		index++;
